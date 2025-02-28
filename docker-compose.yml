@@ -1,0 +1,6 @@
+services:
+  redis:
+    image: ${DOCKER_REGISTRY-}redis
+    build:
+      context: .
+      dockerfile: Redis\Dockerfile
