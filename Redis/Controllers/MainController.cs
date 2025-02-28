@@ -156,7 +156,6 @@ namespace Redis.Controllers
             return await _cache.GetDataObjectAsync<string>($"{key}");
         }
 
-        //DObrymi przykładami dla klucza mogłoby być np. SubFund:{id}:SubfundUnitPrices pokazało
         [HttpGet("GetSubFundsById")]
         public async Task<string> GetBySubfund(int id)
         {
